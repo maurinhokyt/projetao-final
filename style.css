@@ -2,7 +2,7 @@
     --azul:#200f7e;
     --amarelo:#d1c23ac9;
     --azul:#99e8ee;
-    --rosa: #f34d00;
+    --vermelho: #f34d00;
     --preto: #000000;
 }  
 
@@ -29,16 +29,16 @@ header {
     cursor: pointer;
     font-size: 2rem;
     background: none;
-    background-color: var(--verde);
+    background-color: var(--amarelo);
     border: none;
     padding: 1.05rem 1.5rem;
-    color: var(--rosa);
+    color: var(--vermelho);
 }
 
 .lista-vertical {
     display: none;
     position: absolute;
-    background-color: var(--bege-claro);
+    background-color: var(--azul);
     box-shadow: 5px 5px 5px var(--preto);
     min-width: 190px;
     z-index: 1;
@@ -56,7 +56,7 @@ header {
 }
 
 .lista-vertical a:hover {
-    background-color: var(--azul);
+    background-color: var(--vermelho);
 }
 
 #menu-toggle:checked ~ .lista-vertical {
