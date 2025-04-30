@@ -1,0 +1,68 @@
+:root {
+    --azul:#200f7e;
+    --verde:#27c74a;
+    --bege-claro:#C9B194;
+    --rosa: #9938f9;
+    --preto: #000000;
+}  
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--azul);
+    justify-content: center;
+    box-shadow: 0 4px 4px var(--preto);
+}
+.menu-disciplina {
+    display: inline-block;
+    width: 20%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+.botao-disciplinas {
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    background-color: var(--verde);
+    border: none;
+    padding: 1.05rem 1.5rem;
+    color: var(--rosa);
+}
+
+.lista-vertical {
+    display: none;
+    position: absolute;
+    background-color: var(--bege-claro);
+    box-shadow: 5px 5px 5px var(--preto);
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+
+.lista-vertical a {
+    color: var(--preto);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.lista-vertical a:hover {
+    background-color: var(--azul);
+}
+
+#menu-toggle:checked ~ .lista-vertical {
+    display: block;
+}
+
+#menu-toggle:checked + .botao-disciplinas {
+    background-color: var(--preto);
+}
