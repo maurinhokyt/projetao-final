@@ -1,6 +1,6 @@
 :root {
     --azul:#200f7e;
-    --verde:#2cffffa4;
+    --verde:#030000fa;
     --bege-claro:#bb19e4;
     --rosa: #f34d00;
     --preto: #000000;
@@ -25,7 +25,7 @@ header {
 }
 
 
-.botao-disciplinas {
+.botao-DISCIPLINAS {
     cursor: pointer;
     font-size: 2rem;
     background: none;
@@ -63,6 +63,6 @@ header {
     display: block;
 }
 
-#menu-toggle:checked + .botao-disciplinas {
+#menu-toggle:checked + .botao-DISCIPLINAS {
     background-color: var(--preto);
 }
