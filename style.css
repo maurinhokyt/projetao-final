@@ -38,7 +38,7 @@ header {
 .lista-vertical {
     display: none;
     position: absolute;
-    background-color: var(--azul);
+    background-color: var(--amarelo);
     box-shadow: 5px 5px 5px var(--preto);
     min-width: 190px;
     z-index: 1;
