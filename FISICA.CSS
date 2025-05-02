@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(159, 67, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(107, 4, 110);
+    font-size: 28px;
+    font-family:'Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+#fis-nome{
+    width: 80%;
+}
+
+.container {
+    line-height: 50px;
+    margin: 0%;
+    align-items: stretch;
+    justify-items: center;
+    text-align: center;
+    font-size: 30px;
+
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    width: 100%;
+}
+
+/*Estilos para os pilares*/
+.pilar1 { background-color: rgb(255, 255, 255); 
+   
+    border: 2px solid black;
+    width: 100%;
+    align-items: center;
+}
+.pilar2 { background-color: rgb(255, 255, 255);
+    
+    width: 100%;
+    border: 2px solid black;
+    align-items: center;
+ }
+.pilar3 { background-color: rgb(255, 255, 255); 
+    
+    width: 100%;
+    border: 2px solid black;
+    align-items: center;}

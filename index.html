@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portifolio</title>
+    <title>Trabalho Portifólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <div class="menu-disciplina">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="botao-disciplinas"> DISCIPLINAS </label>
-            <div class="lista-vertical">
-                <a href="#">Matemática </a>
-                <a href="#">Física</a>
-                <a href="#">Química</a>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+             <div id="bar1" class="bar"></div>
+             <div id="bar2" class="bar"></div>
+             <div id="bar3" class="bar"></div>
             </div>
-            
-            <label class="botao-Matemática"> Matemática </label>
-            <div>
-                <a href="">atividades</a>
-                <a href="">provas</a>
-                <a href="">notas</a>
-            </div>
-                
-            <label class="botao-Física"> Física </label>
-            <div>
-                 <a href="">atividades</a>
-                <a href="">provas</a>
-                <a href="">notas</a></
-            div>
-               
-            <label class="botao-Química"> Química </label>
-            <div>
-                <a href="">atividades</a>
-                <a href="">provas</a>
-                <a href="">notas</a>
-            </div>
+
+       
+<ul class="nav" id="nav">
+    <li><a href="./prova.html">Prova</a></li>
+    <li><a href="./ativ.html">Atividades</a></li>
+    <li><a href="./lab.html">Laboratório</a></li>
+    
+
+</ul>
+ </div>
+<div class="menu-bg" id="menu-bg"></div>
+
+
+        <div id="nome">
+            <h1>Portifólio</h1>
         </div>
-        
+
+        <nav>
+            <ul class="disciplinas">
+                <li><a href="./bio.html">Química </a></li>
+                <li><a href="./fis.html">Física</a></li>
+                <li><a href="./mat.html">Matemática</a></li>
+            </ul>
+        </nav>
     </header>
+    <footer>
+<p>Este é o Portifólio do 1 Tri, feito pelo aluno Cauê Palotino e Mauro Ko Yuen Tai <br>
+<br>
+    <br>
+<br>
+    Este Portifólio foi realizado para auxiliar na organização e aprendizadodas das disciplinas: Química; Matematica; Fisica.
+</p>
+        
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

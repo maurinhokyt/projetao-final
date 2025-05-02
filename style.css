@@ -1,68 +1,148 @@
-:root {
-    --azul:#100f18;
-    --amarelo:#d1c23ac9;
-    --azul:#8ae2f1;
-    --vermelho: #f34d00;
-    --preto: #000000;
-}  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header {
-    display: flex;
     width: 100%;
-    padding: 1rem;
-    position: relative;
-    background-color: var(--azul);
-    justify-content: center;
-    box-shadow: 0 4px 4px var(--preto);
+    height: 80px;
+    background-color: rgb(38, 148, 252);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.menu-disciplina {
-    display: inline-block;
-    width: 20%;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-
-.botao-DISCIPLINAS {
+#menu{
+    width: 30px;
+    height: 25px;
+    margin: 25px 0 15px 15px;
     cursor: pointer;
-    font-size: 2rem;
-    background: none;
-    background-color: var(--amarelo);
-    border: none;
-    padding: 1.05rem 1.5rem;
-    color: var(--vermelho);
 }
+.bar{
+    height: 4px;
+    width: 8px;
+    background-color: aliceblue;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
 
-.lista-vertical {
+}
+#bar3{
+    transform: translateY(4px);
+
+}
+.nav li a{
+color: rgb(15, 1, 1);
+text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li{
+    list-style: none;
+padding: 10px 0;
+}
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
     display: none;
+}
+
+.menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
     position: absolute;
-    background-color: var(--amarelo);
-    box-shadow: 5px 5px 5px var(--preto);
-    min-width: 190px;
+
+}
+
+.menu-bg{
     z-index: 1;
-    left: 1rem;
-    top: 100%;
+    width: 0;
+    height: 0;
+    margin: 25px 0 15px 15px;
+    background: radial-gradient(circle, #6853b3, #9aa8e7);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+#menu-bar{
+    z-index: 2;
 }
 
-.lista-vertical a {
-    color: var(--preto);
-    padding: 0.75rem 1rem;
+.change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%,-30%);
+}
+.change .bar{
+    background-color: white;
+}
+
+.change #bar1{
+    transform:translateY(4px) rotateZ(-45deg)
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+
+}
+.change #bar2{
+    opacity: 0;
+}
+
+.change{
+   display:block
+}
+
+h1 {
+    color: rgb(144, 233, 203);
+    font-size: 22px;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif 
+}
+
+.nome{
+    width: 80%;
+}
+
+.disciplinas{
+    display: flex;
+}
+
+.disciplinas li{
+    margin: 40px;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+
+.disciplinas li a{
     text-decoration: none;
-    font-size: 2rem;
-    display: block;
+    font-size: 16px;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    color: blue;
+}
+
+p{ border: 3px solid rgb(19, 3, 110);
+    font-weight: 600;
+    color: rgb(7, 150, 194);
+    background-color: rgb(133, 193, 248);
+        font-size: 180%;
+    width: 99,9% 80%;
+    
+    padding: 13%;
+    tab-size: 1cm;
     text-align: center;
-}
 
-.lista-vertical a:hover {
-    background-color: var(--vermelho);
-}
 
-#menu-toggle:checked ~ .lista-vertical {
-    display: block;
 }
+footer{
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgb(238, 243, 245);
+    color: rgb(21, 0, 112);
+ 
 
-#menu-toggle:checked + .botao-DISCIPLINAS {
-    background-color: var(--preto);
 }
