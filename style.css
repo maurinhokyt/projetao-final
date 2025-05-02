@@ -7,7 +7,7 @@
 header {
     width: 100%;
     height: 80px;
-    background-color: rgb(38, 148, 252);
+    background-color: rgb(105, 248, 136);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,7 +21,7 @@ header {
 .bar{
     height: 4px;
     width: 8px;
-    background-color: aliceblue;
+    background-color: rgb(192, 195, 197);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -64,7 +64,7 @@ padding: 10px 0;
     width: 0;
     height: 0;
     margin: 25px 0 15px 15px;
-    background: radial-gradient(circle, #6853b3, #9aa8e7);
+    background: radial-gradient(circle, #6038f0, #a8d7fd);
     border-radius: 50%;
     transition: 0.3s ease;
 }
@@ -98,7 +98,7 @@ padding: 10px 0;
 }
 
 h1 {
-    color: rgb(144, 233, 203);
+    color: rgb(88, 255, 138);
     font-size: 22px;
     font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif 
 }
@@ -122,7 +122,7 @@ h1 {
     text-decoration: none;
     font-size: 16px;
     font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    color: blue;
+    color: rgb(114, 141, 190);
 }
 
 p{ border: 3px solid rgb(19, 3, 110);
